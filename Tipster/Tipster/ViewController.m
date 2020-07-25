@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TipsUtility.h"
 
 @interface ViewController ()
 
@@ -21,7 +22,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    int idx = [TipsUtility defaultTipPercentage];
+    self.tipControl.selectedSegmentIndex = idx;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    NSLog(@"ViewC will appear");
+    int idx = [TipsUtility defaultTipPercentage];
+    self.tipControl.selectedSegmentIndex = idx;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    NSLog(@"ViewC did appear");
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+
+    NSLog(@"ViewC will disappear");
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+
+    NSLog(@"ViewC did disappear");
 }
 
 - (IBAction)onTap:(id)sender {
@@ -33,7 +61,6 @@
         @(0.10),
         @(0.2),
         @(0.22)];
-    
     double tipPercentage = [percentages[self.tipControl.selectedSegmentIndex] doubleValue];
     double bill = [self.billField.text doubleValue];
     double tip = tipPercentage * bill;

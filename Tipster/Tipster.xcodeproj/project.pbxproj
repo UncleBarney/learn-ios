@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		56799FB724CC039C00D25C87 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56799FB624CC039C00D25C87 /* SettingsViewController.m */; };
+		56799FBA24CC0AED00D25C87 /* TipsUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 56799FB924CC0AED00D25C87 /* TipsUtility.m */; };
 		569BCE1E24B437DD00207276 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 569BCE1D24B437DD00207276 /* AppDelegate.m */; };
 		569BCE2124B437DD00207276 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 569BCE2024B437DD00207276 /* SceneDelegate.m */; };
 		569BCE2424B437DD00207276 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 569BCE2324B437DD00207276 /* ViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		56799FB524CC039C00D25C87 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		56799FB624CC039C00D25C87 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		56799FB824CC0AD000D25C87 /* TipsUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipsUtility.h; sourceTree = "<group>"; };
+		56799FB924CC0AED00D25C87 /* TipsUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipsUtility.m; sourceTree = "<group>"; };
 		569BCE1924B437DD00207276 /* Tipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tipster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		569BCE1C24B437DD00207276 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		569BCE1D24B437DD00207276 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,7 +113,9 @@
 		569BCE1B24B437DD00207276 /* Tipster */ = {
 			isa = PBXGroup;
 			children = (
+				56799FB524CC039C00D25C87 /* SettingsViewController.h */,
 				569BCE1C24B437DD00207276 /* AppDelegate.h */,
+				56799FB624CC039C00D25C87 /* SettingsViewController.m */,
 				569BCE1D24B437DD00207276 /* AppDelegate.m */,
 				569BCE1F24B437DD00207276 /* SceneDelegate.h */,
 				569BCE2024B437DD00207276 /* SceneDelegate.m */,
@@ -118,6 +126,8 @@
 				569BCE2A24B437E300207276 /* LaunchScreen.storyboard */,
 				569BCE2D24B437E300207276 /* Info.plist */,
 				569BCE2E24B437E300207276 /* main.m */,
+				56799FB824CC0AD000D25C87 /* TipsUtility.h */,
+				56799FB924CC0AED00D25C87 /* TipsUtility.m */,
 			);
 			path = Tipster;
 			sourceTree = "<group>";
@@ -273,7 +283,9 @@
 			files = (
 				569BCE2424B437DD00207276 /* ViewController.m in Sources */,
 				569BCE1E24B437DD00207276 /* AppDelegate.m in Sources */,
+				56799FB724CC039C00D25C87 /* SettingsViewController.m in Sources */,
 				569BCE2F24B437E300207276 /* main.m in Sources */,
+				56799FBA24CC0AED00D25C87 /* TipsUtility.m in Sources */,
 				569BCE2124B437DD00207276 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
